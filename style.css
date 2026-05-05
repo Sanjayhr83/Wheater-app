@@ -5,17 +5,30 @@
     font-family:'Times New Roman', Times, serif;
 }
 body{
-    background: #222;
+      margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex; /* Centers the card horizontally */
+  justify-content: center;
+  align-items: center; /* Centers the card vertically */
+  /* Using a gradient similar to your generated image */
+ background-image: url(./back.jpg);
+ background-size: 100vh ;
+  /* OR use an image: background: url('your-image.jpg') center/cover no-repeat; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .card{
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(135deg, #667eea , #764ba2);
-    color: #fff;
-    margin:100px auto 0;
-    border-radius: 20px;
-    padding:40px 35px;
-    text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  backdrop-filter: blur(15px); /* Creates the frosted glass look */
+  -webkit-backdrop-filter: blur(15px); /* Support for Safari */
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle light border */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Depth shadow */
+  color: white;
+  text-align: center;
 }
 .search{
     display: flex;
@@ -26,10 +39,11 @@ body{
 .search input{
     border:0;
     outline:0;
-    background: #ebfffc;
+    background: transparent;
     color:#555;
     padding:10px 25px;
     height:60px;
+    border: 2px solid #FFf;
     border-radius: 30px;    
     flex:1;
     margin-right:16px;
